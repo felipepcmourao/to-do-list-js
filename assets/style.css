@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid grey;
+    border-radius: 8px;
+   
+}
+
+button {
+    width: 30%;
+    padding: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    background-color: rgb(50, 152, 50);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+
+.task-item {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+:checked + label {
+    text-decoration: line-through;
+    color: gray;
+}
